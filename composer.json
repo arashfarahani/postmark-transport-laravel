@@ -1,0 +1,26 @@
+{
+  "name": "arashfarahani/postmark-transport-laravel",
+  "description": "Transport postmark for swiftmailer supported laravel",
+  "authors": [
+    {
+      "name": "Postmark",
+      "email": "support@postmarkapp.com"
+    },
+    {
+      "name": "Arash Farahani",
+      "email": "arashmf71@gmail.com"
+    }
+  ],
+  "license": "GPL",
+  "autoload": {
+    "psr-4": {
+      "Diamond\\Mail\\": "src/"
+    }
+  },
+  "require": {
+    "swiftmailer/swiftmailer": "^5.1",
+    "illuminate/mail": "^5.1",
+    "guzzlehttp/guzzle": "^6.0"
+  },
+  "minimum-stability": "stable"
+}
