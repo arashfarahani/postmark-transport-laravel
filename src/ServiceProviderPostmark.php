@@ -30,6 +30,16 @@ class ServiceProviderPostmark extends ServiceProvider
     }
 
     /**
+     * Register the service provider.
+     *
+     * @return void
+     */
+    public function register()
+    {
+
+    }
+
+    /**
      * Get a fresh Guzzle HTTP client instance.
      *
      * @param  array  $config
