@@ -14,12 +14,11 @@ class ServiceProviderPostmark extends ServiceProvider
     /**
      * Register the service provider.
      *
-     * @param TransportManager $transportManager
      * @return void
      */
-    public function boot(TransportManager $transportManager)
+    public function boot()
     {
-        $transportManager->extend('postmark', function ($app){
+        $this->app['swift.transport']->extend('postmark', function ($app){
             $config = $app['config']->get('services.postmark', []);
 
             return new PostmarkTransport(
